@@ -1,3 +1,5 @@
 .env/
 corrupted/__pycache__
-db.sqlite
+db.sqlite3
+*.pyc
+db.sqlite3

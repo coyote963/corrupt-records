@@ -1,17 +1,27 @@
-<nav>
-    <ul>
-        <li>
-            <a href="#">Home</a>
-        </li>
-        <li>
-            <a href="#">Services</a>
-        </li>
-        <li>
-            <a href="#">Merchandise</a>
-        </li>
-        <li>
-            <a href="#">Contact Us</a>
-        </li>
-    </ul>
-</nav>
-<h1>Corrupted Public Records</h1>
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'home/home.css' %}">
+
+
+<div class="header-container">
+    <img style="width:100%" src="{% static 'home/images/bg2.jpg' %}">
+    <nav class="top-left">
+        <ul>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">Services</a>
+            </li>
+            <li>
+                <a href="#">Merchandise</a>
+            </li>
+            <li>
+                <a href="#">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+    <h1 class="header-title">
+        Corrupt Records
+    </h1>
+</div>
