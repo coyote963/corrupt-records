@@ -1,26 +1,23 @@
 .bg-image {
-    width: 100%
+  width: 100%
 }
+
 body {
-    margin:0px;
-    
+  margin:0px;
 }
 
 .top-left {
-    position: absolute;
-    top: 8px;
-    left: 16px;
+  position: absolute;
+  top: 8px;
+  left: 16px;
 }
 
 .header-container {
-    position: relative;
-    text-align: center;
-    color: white;
-    height: 100vh;
-    background: linear-gradient(to bottom,#ff480050, #000000), url("/static/home/images/bg.jpg");
-    background-size: 100%;
-    justify-content: center;
-    align-items: center;
+  text-align: center;
+  color: white;
+  height: 100vh;
+  background: linear-gradient(to bottom,#ff480050, #000000), url("/static/home/images/1612650528695.jpg");
+  background-size: 100%;
 }
 
 ul {
@@ -35,6 +32,7 @@ nav a {
     color: white;
     text-align: center;
     text-decoration: none;
+    display: block;
 }
 
 nav a:hover {
@@ -53,13 +51,7 @@ nav a:hover {
     cursor:default;
 }
 nav {
-    display: grid;
-    gap: 6rem;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    font: 120% system-ui;
-    text-align: center;
-    padding: 2rem 2rem;
-    text-align:right;
+  display: block
 }
   
 .about-us {
@@ -74,34 +66,49 @@ nav {
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
   }
-  @media (min-width: 768px) {
-    .container {
-      width: 750px;
-    }
+  nav {
+    display: grid;
+    gap: 6rem;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    font: 120% system-ui;
+    text-align: center;
+    padding: 2rem 2rem;
+    text-align:right;
   }
-  @media (min-width: 992px) {
-    .container {
-      width: 970px;
-    }
+
+  .row {
+    display: flex;
+    align-items: center;
+    height:100%
   }
-  @media (min-width: 1200px) {
-    .container {
-      width: 1170px;
-    }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
   }
-  
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
 
 h1 {
-    font-family: 'Space Grotesk', sans-serif;
-    font-size:3em;
-    color:white;
-    margin:0;
-    padding:1em 0;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size:3em;
+  color:white;
+  margin:0;
+  padding:1em 0;
 }
 
 p {
-    font-family: 'Roboto Condensed', sans-serif;
-    margin: 0px;
-    color: white;
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: 0px;
+  color: white;
 }
+
